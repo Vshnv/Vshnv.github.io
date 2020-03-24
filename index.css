@@ -1,0 +1,143 @@
+
+nav {
+    height: 100px;
+    width:100%;
+    background-color: black;
+}
+
+body {
+    height: 100%;
+    
+}
+
+.navLogo {
+    vertical-align: middle;
+    color: white;
+    font-size: 2em;
+    padding-left: 50px;
+    padding-top: 30px;
+    font-family: 'Rokkitt' ,sans-serif;
+}
+
+.navSub {
+    font-size: 0.5em;
+    padding-left: 10px;
+}
+
+.gitIcon {
+    height: 80px;
+    float: right;
+    margin-top: -73px;
+    margin-right: 25px;
+}
+
+.topCrsl {
+    height: 500px;
+    width: calc(100vw-20px);
+    background-color: rgb(250,245,255);
+    margin-top: 20px;
+    padding-left: 20px;
+     white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#main {
+    position: absolute;
+    height: 800px;
+    width: 100%;
+    margin-left: -10px;
+    margin-top: 0px;
+    background-color: white;
+}
+
+#postContainer {
+    height: 100%;
+    width: 75%;
+    margin-top: 0px;
+    background-color: white;
+}
+
+.postContainer {
+    position: absolute;
+    left: 0px;
+    height: 97%;
+    width: 75%;
+    margin-top: 10px;
+    background-color: rgb(252, 247, 252);
+}
+
+.purchaseHistory {
+    position: absolute;
+    display: inline-block;
+    right: 0px;
+    height: 97%;
+    width: 24%;
+    margin-right: 5px;
+    margin-top: 10px;
+    background-color: rgb(222, 216, 222);
+}
+
+.inline {
+    display: inline-block;
+}
+
+.topBarTitle {
+    color: white;
+    background-color: black;
+    font-family: 'Rokkitt' ,sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    
+}
+
+.purchaseTable {
+    width: 100%;
+    font-family: 'Rokkitt' ,sans-serif;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table,tr,td {
+    box-shadow: 0px 1px 1px 1px rgb(100,100, 100);
+    border-collapse: collapse;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+th {
+    background-color: rgb(255,255,245);
+    border-collapse: collapse;
+    box-shadow: 0px 1px 2px 1px rgb(0, 0, 0);
+}
+
+td {
+    height: 100px;
+}
+
+tr {
+    min-height: 200px;
+    background-color: rgb(245,235,235);
+}
+
+
+
+.crslBox {
+    width: 20%;
+    margin-right: 20px;
+    height: 95%;
+    vertical-align: top;
+    margin-top: 15px;
+    background-color: rgb(245,240,255);
+    display: inline-block;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.crslTitle {
+   font-size: 2em;
+    font-family: 'Rokkitt' ,sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
