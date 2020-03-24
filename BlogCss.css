@@ -1,0 +1,52 @@
+body{
+	border-left: 3px dotted black;
+	border-right: 3px dotted black;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+div#main-container{
+	border: 3px solid gray;
+	padding: 13px,13px,13px,13px;
+	margin: auto auto;
+	border-radius: 10px;
+}
+div{
+	background: silver;
+	color: black;
+}
+div:hover{
+	background: darkgray;
+	color: black;
+}
+#quote{
+	background: yellow;
+	font-family: "verdana" , "gill sans";
+	color: black;
+}
+.date{
+	background: gray;
+	color: white;
+	font-style: italic;
+}
+div#quote-container{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+p#quote{
+	background: lightyellow;
+	border: 3px dotted white;
+	color: orange;
+	font-family: cursive;
+	font-size: 0.75em; 
+	border-radius: 10px;
+}
+
+#blog-title{
+	font-style: bold;
+	font-variant: small-caps;
+	font-weight: bolder;
+	padding-left: 15px;
+}
+#post-article{
+	padding-left: 15px;
+}
