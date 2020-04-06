@@ -1,74 +1,196 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dev. Page - Vshnv</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="index.css">
+	<title>Vshnv - Git</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rokkitt">
 </head>
-
 <body>
-    <nav>
-        <div class="navLogo">
-            Vshnv_|...
-            <div class="navSub">
-                Developer Page
-            </div>
-        </div>
-        <div class="hookright">
-            <a href="https://github.com/Vshnv"><img src="giticon.png" class="gitIcon" \></a>
+	<nav>
+		 <a href="https://github.com/Vshnv" class = "navRight"><img src="res/giticon.png" class="gitIcon" \></a>
+		 <div class = "logoNav">ProjList</div>
 
-        </div>
-    </nav>
-    <div class="topCrsl">
-        <div class = "crslBox">
-            <div class= "crslTitle">Web Dev</div>
-        </div>
-        <div class = "crslBox">
-            <div class= "crslTitle">Java</div>
-        </div>
-        <div class = "crslBox">
-            <div class= "crslTitle">Server Management</div>
-        </div>
-        <div class = "crslBox">
-            <div class= "crslTitle">Project Patching</div>
-        </div>
-        <div class = "crslBox">
-            <div class= "crslTitle">Game Dev</div>
-        </div>
-        <div class = "crslBox">
-            <div class= "crslTitle">Project Assistance</div>
-        </div>
+		 <div id="navLinks">
+		 	<ul>
+		 		<li class = "active">Home</li>
+		 		<li class = "splitNav"></li>
+		 		<li>JWeb</li>
+		 		<li class = "splitNav"></li>
+		 		<li>BotNegate</li>
+		 		<li class = "splitNav"></li>
+		 		<li>DiscordSync</li>
+		 	</ul>
+		 </div>
+	</nav>
+	<div class = "Container bluegray">
+		<div class = "contTitle">Latest Projects</div><hr>
+		<div class = "contDesc">
+			JWeb[Snapshot]<br>
+			BotNegate[In-Dev]<br>
+			DiscordSync[Beta Release]
+		</div>
+	</div>
+	<br>
+	<div class = "Container white"><hr>
+		<div class = "contTitle">JWeb</div><hr>
+		<div class = "contDesc">
+			A Java based API to allow creation of static websites using Java replacing HTML/CSS/JS. JWeb also adds use of 'Components' to reduce the redundency in Code.
+			<br>
+			<a href="https://github.com/Vshnv" class = ""><img src="res/jwebicon.jpeg" class="projIcon" \></a>
+		</div>
+		<div class = "contTitleSub gray">Description</div>
+		<div class = "contDesc italic gray"><hr>
+			JWeb converts Java code into html,css and js to allow creation of clean and easy to create websites. The Object model present allows you to create components which can be reused thus greatly reducing redundency. It also allows the use of external Modules which allow further expansion on the project. JWeb can also be used as a Server Software in which case it can be used to make Session based changes to the pages.
+			<br><br><br>
+		</div>
+	</div>
+	<div class = "Container darkMode childCenter">
+		<div class = "inline contDesc maxhalf">
+			<span class="codeHighlight">Object Oriented Web Design</span>
+			<div class = "codeJava darkMode fill leftAlign">
+				BodyContainer body = <span class = "constructor">new</span> BodyContainer();<br>
+        		Container div = <span class = "constructor">new</span>  Container(Tag.<span class = "enum">DIV</span>);<br>
+        		div.getStyle().setHeight(StyleUnit.<span class = "enum">PIXEL</span>,<span class = "intCode">500</span>);<br>
+       			<div class = "firstLine">div.getStyle().setWidth(StyleUnit.<span class = "enum">PIXEL</span>,<span class = "intCode">500</span>);<br></div>
+        		div.getStyle().addProperty(<span class = "constructor">new</span>  BGColor(<span class = "intCode">255</span>,<span class = "intCode">10</span>,<span class = "intCode">10</span>,<span class = "intCode">50</span>));<br>
+        		host.getMainContainer().addContent(body);<br>
+        		body.addContent(div);<br>
+        		body.getStyle().addProperty(<span class = "constructor">new</span>  AbstractStyleProperty() {<br>
+            		&nbsp@Override<br>
+            		&nbsp<span class = "constructor">public</span> String <span class = "method">getStyleKey()</span> {<br>
+               		 	&nbsp&nbsp<span class = "constructor">return</span> <span class = "string">"font-size"</span>;<br>
+            		&nbsp}<br>
+					<br>
+            		&nbsp@Override<br>
+            		&nbsp<span class = "constructor">public</span> String <span class = "method">getStyleValue()</span> {<br>
+                	&nbsp&nbsp	<span class = "constructor">return</span> <span class = "string">"10em"</span>;<br>
+            		&nbsp}<br>
+        		});<br>
+        		body.getStyle().addProperty(new AbstractStyleProperty() {<br>
+            		&nbsp@Override<br>
+            		&nbsp<span class = "constructor">public</span> String <span class = "method">getStyleKey()</span> {<br>
+                		&nbsp&nbsp<span class = "constructor">return</span> <span class = "string">"transform"</span>;<br>
+            		&nbsp}<br>
+<br>
+            		&nbsp@Override<br>
+            		&nbsp<span class = "constructor">public</span> String <span class = "method">getStyleValue()</span> {<br>
+                		&nbsp&nbsp<span class = "constructor">return</span> <span class = "string">"rotate(90deg)"</span>;<br>
+            		&nbsp}<br>
+        		});
+			</div>
+		</div>
+		<div class = "inline contDesc maxhalf">
+			<span class="codeHighlight">Modular and Expandable</span>
+			<div class = "codeJava darkMode fill leftAlign">
+				<span class = "constructor">public class</span> Font <span class = "constructor">extends</span>  AbstractStyleProperty{<br>
+					&nbsp<span class = "constructor">public</span> <span class = "method">FOnt</span>(String webSafe,String custom){<br>
+						&nbsp&nbsp<span class = "constructor">super</span>.<span class = "enum">value</span> = <span class = "string">"'"</span>+custom+<span class = "string">"', "</span> + webSafe; <br>
+					&nbsp}<br>
+<br>
+					&nbsp@Override<br>
+            		<div class = "firstLine">&nbsp<span class = "constructor">public</span> String <span class = "method">getStyleKey()</span> {<br></div>
+                		&nbsp&nbsp<span class = "constructor">return</span> <span class = "string">"font-family"</span>;<br>
+            		&nbsp}<br>
+<br>
+            		&nbsp@Override<br>
+            		&nbsp<span class = "constructor">public</span> String <span class = "method">getStyleValue()</span> {<br>
+                		&nbsp&nbsp<span class = "constructor">return</span> <span class = "enum">value</span>;<br>
+            		&nbsp}<br>
+				}
+			</div>
+		</div>
+	</div><br>
+	<div class = "Container white"><hr>
+		<div class = "contTitle">BotNegate</div><hr>
+		<div class = "contDesc">
+			API using Multi-Layered Perceptrons to classify bot attacks / bot usage in games. [In Developement]
+			<br>
+			<a href="https://github.com/Vshnv" class = ""><img src="res/jwebicon.jpeg" class="projIcon" \></a>
+		</div>
+		<div class = "contTitleSub gray">Description</div>
+		<div class = "contDesc italic gray"><hr>
+			[In Developement]
+			<br><br><br>
+		</div>
+	</div>
+	<div class = "Container darkMode childCenter">
+		<div class = "inline contDesc maxhalf">
+			<span class="codeHighlight">Easy To Use</span>
+			<div class = "codeJava darkMode fill leftAlign">
+				BotNegate botn = <span class = "constructor">new</span> BotNegate(new File("/trainingData.dat"),Type.<span class = "enum">ATTACK</span>);<br>
+				botn.prepare();<br>
+				botn.setHandshakeListener(PacketPPListener);<br>
+				<div class = "firstLine">botn.setActionLevel(ActionLevel.<span class = "enum">CONNECTION_DENY</span>);</div>
+				botn.setLogger(<span class = "constructor">super</span>.getLogger());<br>
+				botn.start();<br>
+			</div>
+		</div>
+		<div class = "inline contDesc maxhalf">
+			<span class="codeHighlight">Event Based System</span>
+			<div class = "codeJava darkMode fill leftAlign">
+				<span class = "constructor">public class</span> ConDenyListener <span class = "constructor">extends</span>  BNListener{<br>
+				&nbsp<span class = "constructor">public</span> ConDenyListener(BotNegate bn){<br>
+					&nbsp&nbspbn.registerListener(<span class = "constructor">this</span>);<br>
+				&nbsp}<br>
+				&nbsp@Override<br>
+				<div class = "firstLine">&nbsp<span class = "constructor">public void</span> onBotDeny(BotConnectionDenyEvent e){</div>
+					&nbsp&nbspSystem.out.printn(<span class = "string">"From con deny event -> "</span> + e.getIPAddress());<br>
+					&nbsp&nbspe.setBlackListIP(<span class = "constructor">true</span>);<br>
+				&nbsp}<br>
+				}<br>
+			</div>
+		</div>
+	</div>
 
-    </div>
-    <div id="main">
-        <div class="postContainer" class="inline">
-            <div class="topBarTitle">Posts</div>
-        </div>
-        <div class="purchaseHistory" class="inline">
-            <div class="topBarTitle">Customer History</div>
-            <table class = "purchaseTable">
-                <tr>
-                    <th>Name/Alias</th>
-                    <th>Service/Product</th>
-                    <th>Payment</th>
-                </tr>
-                <tr>
-                    <td>Hebitsukaiza (Alias)</td>
-                    <td>Java dev + Maintenance</td>
-                    <td>100$/wk</td>
-                </tr>
-                <tr>
-                    <td>SFF (Company)</td>
-                    <td>Web Dev</td>
-                    <td>120$+Hosting Charges</td>
-                </tr>
-                <tr>
-                    <td>TS (FreeLance project)</td>
-                    <td>Java Dev</td>
-                    <td>1$ /download</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-</body></html>
+
+	<br>
+	<div class = "Container white"><hr>
+		<div class = "contTitle">DiscordSync</div><hr>
+		<div class = "contDesc">
+			Allows syncing between multiple discord channels between multiple or same discord servers.
+			<br>
+			<a href="https://github.com/Vshnv" class = ""><img src="res/jwebicon.jpeg" class="projIcon" \></a>
+		</div>
+		<div class = "contTitleSub gray">Description</div>
+		<div class = "contDesc italic gray"><hr>
+			Sync messages between multiple channels to hold combined chats between servers. Can also be used to create and hold backup servers or logs
+			<br><br><br>
+		</div>
+	</div>
+	<div class = "Container darkMode childCenter">
+		<div class = "inline contDesc maxhalf">
+			<span class="codeHighlight">Easy Server-Backups</span>
+			<div class = "codeJava darkMode fill leftAlign">
+				<div class="blue">CommandLine Usage</div>
+				 BotNegate>backup -s %serverID% -b %backupServerID% <br>
+				 BotNegate>Initializing backup!<br>
+				 BotNegate>Backup 10%<br>
+				 BotNegate>Backup 15%<br>
+				 BotNegate>Backup 19%<br>
+				 BotNegate>Backup 26%<br>
+				 BotNegate>Backup 32%<br>
+				 BotNegate>Backup 58%<br>
+				 BotNegate>Backup 63%<br>
+				 BotNegate>Backup 79%<br>
+				 BotNegate>Backup 90%<br>
+				 BotNegate>Backup 97%<br>
+				 BotNegate>Backup 98%<br>
+				 BotNegate>Backup 99%<br>
+				 BotNegate>Backup 100%<br>
+				 BotNegate>Setting permission...<br>
+				 BotNegate>Backup Complete_<br>
+			</div>
+		</div>
+		<div class = "inline contDesc maxhalf">
+			<span class="codeHighlight">Command Line Usage</span>
+			<div class = "codeJava darkMode fill leftAlign">
+				<div class="blue">CommandLine Usage</div>
+				 BotNegate>Starting... <br>
+				 BotNegate>Initializing Bot from config!<br>
+				 BotNegate>Bot active!_<br>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

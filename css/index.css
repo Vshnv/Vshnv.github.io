@@ -1,0 +1,185 @@
+html{
+    height:100%;
+}
+body{
+	height: 100%;
+	width: 100%;
+	margin-left: 0px;
+	margin-top: 0px;
+	font-family: 'Rokkitt' ,sans-serif;
+}
+nav{
+	background-color: black;
+	height: 100px;
+	width: 100%;
+}
+
+.navRight{
+	float: right;
+
+
+}
+
+.gitIcon{
+	height: 75px;
+	padding-top: 12px;
+	float: right;
+}
+.logoNav{
+	color: white;
+	margin-left: 10px;
+	padding-top: 25px;
+	font-size: 2.5em;
+}
+#navLinks{
+
+}
+#navLinks ul{
+	position: absolute;
+
+	text-align: center;
+	text-decoration: none;
+	list-style: none;
+	list-style-type: none;
+	display: inline-block;
+	box-sizing: border-box;
+	color: white;
+	right: 10px;
+	margin-top: -30px;
+	font-family: 'Rokkitt' ,sans-serif;
+	margin-right: 37%;
+	font-size: 2em;
+}
+#navLinks ul li{
+	display: inline-block;
+	margin-right: 10px;
+}
+#navLinks ul .active{
+	color: lightblue;
+}
+.splitNav{
+	width: 2px;
+	height: 30px;
+	background-color: lightblue;
+}
+.blue{
+	background-color: rgba(0,100,255,0.2);
+}
+.white{
+	background-color: white;
+}
+.gray{
+	background-color: rgba(150,150,200,0.3);
+}
+.bluegray{
+	background-color: rgba(80,150,200,0.1);
+}
+.black{
+	background-color: rgba(0,0,0,0.8);
+}
+
+.Container{
+	width:100%;
+	min-height: 200px;
+}
+
+.contTitle{
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+}
+.contTitleSub{
+	font-size: 1.5em;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	padding-top: 10px;
+}
+.italic{
+	font-style: italic;
+}
+.contDesc{
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 10px;
+}
+
+
+.projIcon{
+	height: 200px;
+	border-radius: 100px;
+}
+
+.inline{
+	display: inline-block;
+	height: 100%;
+}
+
+
+.darkMode{
+	background-color: rgb(43,43,43);
+	color: rgb(168,182,173);
+}
+.codeJava{
+	font-size: 0.5em !important;
+	overflow-y: auto;
+	height: 200px !important;
+}
+.childCenter{
+	text-align:center;
+}
+.fill{
+height: 100%;
+}
+.maxhalf{
+	max-width: 80vw;
+	width: 30vw;
+}
+.leftAlign{
+	text-align: left !important;
+}
+.firstLine{
+	background-color: rgb(50,50,50);
+}
+.constructor{
+	color: rgb(200,150,100);
+}
+.enum{
+	color: rgb(160,110,160);
+}
+.method{
+	color: rgb(250,190,110);
+}
+.string{
+	color: rgb(110,150,110);
+}
+.intCode{
+	color: rgb(100,150,180);
+}
+
+.codeHighlight{
+	background-color: rgba(150,150,50,0.3);
+}
+.repoButton{
+	width: 100px;
+	height: 20px;
+	background-color: red;
+}
+
+@media(max-width: 1200px){
+	#navLinks{
+		display: none;
+	}
+}
+
+@media(max-width: 500px){
+	.inline{
+		display: block;
+		margin: auto;
+	}
+	.maxhalf{
+		max-width: 100vw;
+		width: 100%;
+	}
+}
