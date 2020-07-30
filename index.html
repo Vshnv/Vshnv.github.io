@@ -1,192 +1,493 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Vshnv - Git</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rokkitt">
-</head>
-<body>
-	<nav>
-		 <a href="https://github.com/Vshnv" class = "navRight"><img src="res/giticon.png" class="gitIcon" \></a>
-		 <div class = "logoNav">Vshnv</div>
+<!doctype html>
+<html class="no-js" lang="en">
 
-		 <div id="navLinks">
-		 	<ul>
-		 		<li class = "active">GitPage</li>
-		 		<!---li class = "splitNav"></li>
-		 		<li>JWeb</li>
-		 		<li class = "splitNav"></li>
-		 		<li>BotNegate</li>
-		 		<li class = "splitNav"></li>
-		 		<li>DiscordSync</li-->
-		 	</ul>
-		 </div>
-	</nav>
-	<div class = "Container bluegray">
-		<div class = "contTitle">Latest Projects</div><hr>
-		<div class = "contDesc">
-			JWeb[Snapshot]<br>
-			BotNegate[In-Dev]<br>
-			DiscordSync[Beta Release]
-		</div>
-	</div>
-	<br>
-	<div class = "Container white"><hr>
-		<div class = "contTitle">JWeb</div><hr>
-		<div class = "contDesc">
-			A Java based API to allow creation of static websites using Java replacing HTML/CSS/JS. JWeb also adds use of 'Components' to reduce the redundency in Code.
-			<br>
-			<a href="https://github.com/Vshnv/JWebAPI" class = ""><img src="res/JWebCUT.jpg" class="projIcon" \></a>
-		</div>
-		<div class = "contTitleSub gray">Description</div>
-		<div class = "contDesc italic gray"><hr>
-			JWeb converts Java code into html,css and js to allow creation of clean and easy to create websites. The Object model present allows you to create components which can be reused thus greatly reducing redundency. It also allows the use of external Modules which allow further expansion on the project. JWeb can also be used as a Server Software in which case it can be used to make Session based changes to the pages.
-			<br><br><br>
-		</div>
-	</div>
-	<div class = "Container darkMode childCenter">
-		<div class = "inline contDesc maxhalf">
-			<span class="codeHighlight">Object Oriented Web Design</span>
-			<div class = "codeJava darkMode fill leftAlign">
-				BodyContainer body = <span class = "constructor">new</span> BodyContainer();<br>
-        		Container div = <span class = "constructor">new</span>  Container(Tag.<span class = "enum">DIV</span>);<br>
-        		div.getStyle().setHeight(StyleUnit.<span class = "enum">PIXEL</span>,<span class = "intCode">500</span>);<br>
-       			<div class = "firstLine">div.getStyle().setWidth(StyleUnit.<span class = "enum">PIXEL</span>,<span class = "intCode">500</span>);<br></div>
-        		div.getStyle().addProperty(<span class = "constructor">new</span>  BGColor(<span class = "intCode">255</span>,<span class = "intCode">10</span>,<span class = "intCode">10</span>,<span class = "intCode">50</span>));<br>
-        		host.getMainContainer().addContent(body);<br>
-        		body.addContent(div);<br>
-        		body.getStyle().addProperty(<span class = "constructor">new</span>  AbstractStyleProperty() {<br>
-            		&nbsp@Override<br>
-            		&nbsp<span class = "constructor">public</span> String <span class = "method">getStyleKey()</span> {<br>
-               		 	&nbsp&nbsp<span class = "constructor">return</span> <span class = "string">"font-size"</span>;<br>
-            		&nbsp}<br>
-					<br>
-            		&nbsp@Override<br>
-            		&nbsp<span class = "constructor">public</span> String <span class = "method">getStyleValue()</span> {<br>
-                	&nbsp&nbsp	<span class = "constructor">return</span> <span class = "string">"10em"</span>;<br>
-            		&nbsp}<br>
-        		});<br>
-        		body.getStyle().addProperty(new AbstractStyleProperty() {<br>
-            		&nbsp@Override<br>
-            		&nbsp<span class = "constructor">public</span> String <span class = "method">getStyleKey()</span> {<br>
-                		&nbsp&nbsp<span class = "constructor">return</span> <span class = "string">"transform"</span>;<br>
-            		&nbsp}<br>
-<br>
-            		&nbsp@Override<br>
-            		&nbsp<span class = "constructor">public</span> String <span class = "method">getStyleValue()</span> {<br>
-                		&nbsp&nbsp<span class = "constructor">return</span> <span class = "string">"rotate(90deg)"</span>;<br>
-            		&nbsp}<br>
-        		});
-			</div>
-		</div>
-		<div class = "inline contDesc maxhalf">
-			<span class="codeHighlight">Modular and Expandable</span>
-			<div class = "codeJava darkMode fill leftAlign">
-				<span class = "constructor">public class</span> Font <span class = "constructor">extends</span>  AbstractStyleProperty{<br>
-					&nbsp<span class = "constructor">public</span> <span class = "method">FOnt</span>(String webSafe,String custom){<br>
-						&nbsp&nbsp<span class = "constructor">super</span>.<span class = "enum">value</span> = <span class = "string">"'"</span>+custom+<span class = "string">"', "</span> + webSafe; <br>
-					&nbsp}<br>
-<br>
-					&nbsp@Override<br>
-            		<div class = "firstLine">&nbsp<span class = "constructor">public</span> String <span class = "method">getStyleKey()</span> {<br></div>
-                		&nbsp&nbsp<span class = "constructor">return</span> <span class = "string">"font-family"</span>;<br>
-            		&nbsp}<br>
-<br>
-            		&nbsp@Override<br>
-            		&nbsp<span class = "constructor">public</span> String <span class = "method">getStyleValue()</span> {<br>
-                		&nbsp&nbsp<span class = "constructor">return</span> <span class = "enum">value</span>;<br>
-            		&nbsp}<br>
-				}
-			</div>
-		</div>
-	</div><br>
-	<div class = "Container white"><hr>
-		<div class = "contTitle">DiscordSync</div><hr>
-		<div class = "contDesc">
-			Allows syncing between multiple discord channels between multiple or same discord servers.
-			<br>
-			<a href="https://github.com/Vshnv/DiscordSync" class = ""><img src="res/DSCUT.jpg" class="projIcon" \></a>
-		</div>
-		<div class = "contTitleSub gray">Description</div>
-		<div class = "contDesc italic gray"><hr>
-			Sync messages between multiple channels to hold combined chats between servers. Can also be used to create and hold backup servers or logs
-			<br><br><br>
-		</div>
-	</div>
-	<div class = "Container darkMode childCenter">
-		<div class = "inline contDesc maxhalf">
-			<span class="codeHighlight">Easy Server-Backups</span>
-			<div class = "codeJava darkMode fill leftAlign">
-				<div class="blue">Terminal</div>
-				 BotNegate>-t %botToken%> -m backup -s %serverID%<br>
-				 BotNegate>Initializing backup!<br>
-				 BotNegate>Creating backup server...<br>
-				 BotNegate>Setting up permission...<br>
-				 BotNegate>Setting up roles...<br>
-				 BotNegate>Setting up categories...<br>
-				 BotNegate>Setting up channels...<br>
-				 BotNegate>Initial setup complete! Invite link: %inviteLink%<br>
-				 BotNegate>Syncing messages from past 30 days<br>
-				 BotNegate>286 messages found!<br>
-				 BotNegate>Sync complete!<br>
-			</div>
-		</div>
-		<div class = "inline contDesc maxhalf">
-			<span class="codeHighlight">Command Line Usage</span>
-			<div class = "codeJava darkMode fill leftAlign">
-				<div class="blue">Terminal</div>
-				 BotNegate>-t %botToken% -m sync -c {%channel1%,%channel2%,%channel3%}<br>
-				 BotNegate>Initializing Bot!<br>
-				 BotNegate>Bot invite link : %inviteLink%!<br>
-				 BotNegate>Sync active! Syncing all messages between channels..._<br>
-			</div>
-		</div>
-	</div>
-	<div class = "Container white"><hr>
-		<div class = "contTitle">BotNegate</div><hr>
-		<div class = "contDesc">
-			API using Multi-Layered Perceptrons to classify bot attacks / bot usage in games. [In Developement]
-			<br>
-			<a href="https://github.com/Vshnv" class = ""><img src="res/jwebicon.jpeg" class="projIcon" \></a>
-		</div>
-		<div class = "contTitleSub gray">Description</div>
-		<div class = "contDesc italic gray"><hr>
-			[In Developement]
-			<br><br><br>
-		</div>
-	</div>
-	<div class = "Container darkMode childCenter">
-		<div class = "inline contDesc maxhalf">
-			<span class="codeHighlight">Easy To Use</span>
-			<div class = "codeJava darkMode fill leftAlign">
-				BotNegate botn = <span class = "constructor">new</span> BotNegate(new File("/trainingData.dat"),Type.<span class = "enum">ATTACK</span>);<br>
-				botn.prepare();<br>
-				botn.setHandshakeListener(PacketPPListener);<br>
-				<div class = "firstLine">botn.setActionLevel(ActionLevel.<span class = "enum">CONNECTION_DENY</span>);</div>
-				botn.setLogger(<span class = "constructor">super</span>.getLogger());<br>
-				botn.start();<br>
-			</div>
-		</div>
-		<div class = "inline contDesc maxhalf">
-			<span class="codeHighlight">Event Based System</span>
-			<div class = "codeJava darkMode fill leftAlign">
-				<span class = "constructor">public class</span> ConDenyListener <span class = "constructor">extends</span>  BNListener{<br>
-				&nbsp<span class = "constructor">public</span> ConDenyListener(BotNegate bn){<br>
-					&nbsp&nbspbn.registerListener(<span class = "constructor">this</span>);<br>
-				&nbsp}<br>
-				&nbsp@Override<br>
-				<div class = "firstLine">&nbsp<span class = "constructor">public void</span> onBotDeny(BotConnectionDenyEvent e){</div>
-					&nbsp&nbspSystem.out.printn(<span class = "string">"From con deny event -> "</span> + e.getIPAddress());<br>
-					&nbsp&nbspe.setBlackListIP(<span class = "constructor">true</span>);<br>
-				&nbsp}<br>
-				}<br>
-			</div>
-		</div>
-	</div>
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>Portfolio</title>
 
-	<br>
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+		<!--flat icon css-->
+		<link rel="stylesheet" href="assets/css/flaticon.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
 	
-</body>
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+		
+		<!-- top-area Start -->
+		<header class="top-area">
+			<div class="header-area">
+				<!-- Start Navigation -->
+			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+
+			        <div class="container">
+
+			            <!-- Start Header Navigation -->
+			            <div class="navbar-header">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+			                    <i class="fa fa-bars"></i>
+			                </button>
+			                <a class="navbar-brand" href="index.html">VSHNV</a>
+			            </div><!--/.navbar-header-->
+			            <!-- End Header Navigation -->
+
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+			                <li class=" smooth-menu active"></li>
+			                    <li class=" smooth-menu"><a href="#welcome-hero">home</a></li>
+			                    <li class="smooth-menu"><a href="#about">about</a></li>
+			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
+			                    <li class="smooth-menu"><a href="#portfolio">certifications</a></li>
+			                    <li class="smooth-menu"><a href="#projects">projects</a></li>
+			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
+			                </ul><!--/.nav -->
+			            </div><!-- /.navbar-collapse -->
+			        </div><!--/.container-->
+			    </nav><!--/nav-->
+			    <!-- End Navigation -->
+			</div><!--/.header-area-->
+
+		    <div class="clearfix"></div>
+
+		</header><!-- /.top-area-->
+		<!-- top-area End -->
+	
+		<!--welcome-hero start -->
+		<section id="welcome-hero" class="welcome-hero">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="header-text">
+							<h2><span></span> Hi, I'm <br> VSHNV <br> <span>.</span>   </h2>
+							<p>I am a student Java/Kotlin Developer </p>
+						</div><!--/.header-text-->
+					</div><!--/.col-->
+				</div><!-- /.row-->
+			</div><!-- /.container-->
+
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+		<!--about start -->
+		<section id="about" class="about">
+			<div class="section-heading text-center">
+				<h2>about me</h2>
+			</div>
+			<div class="container">
+				<div class="about-content">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="single-about-txt">
+								<h3>
+									My name is Vaishnav Anil Nair,<br>
+									Student at Vellore Institute of Technology, Bhopal<br>
+									Studying B.Tech in CSE with spez. in Gaming Technology.<br>
+									I work mostly with JVM languages, mainly Java and Kotlin
+									and have recently started with C# and Unity.
+									I also do some web development
+								</h3>
+								<p>
+									
+								</p>
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="single-about-add-info">
+											<h3>Phone</h3>
+											<p>+91-9605-182938</p>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-about-add-info">
+											<h3>Email</h3>
+											<p>vaishnavanil7th<br>@gmail.com</p>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-about-add-info">
+											<h3>Website</h3>
+											<p>www.vshnv.github.io</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-offset-1 col-sm-5">
+							<div class="single-about-img">
+								<img src="assets/images/about/profile_image.jpg" alt="profile_image">
+								<div class="about-list-icon">
+									<ul>
+										<li>
+											<a href="#">
+												<i  class="fa fa-facebook" aria-hidden="true"></i>
+											</a>
+										</li><!-- / li -->
+										<li>
+											<a href="#">
+												<i  class="fa fa-github" aria-hidden="true"></i>
+											</a>
+											
+										</li><!-- / li -->
+										<li>
+											<a href="#">
+												<i  class="fa fa-twitter" aria-hidden="true"></i>
+											</a>
+											
+										</li><!-- / li -->
+										<li>
+											<a href="#">
+												<i  class="fa fa-linkedin" aria-hidden="true"></i>
+											</a>
+										</li><!-- / li -->
+										<li>
+											<a href="#">
+												<i  class="fa fa-instagram" aria-hidden="true"></i>
+											</a>
+										</li><!-- / li -->
+										
+										
+									</ul><!-- / ul -->
+								</div><!-- /.about-list-icon -->
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--/.about-->
+		<!--about end -->
+		
+		<!--experience start -->
+		
+
+
+		<!--portfolio start -->
+		<section id="portfolio" class="portfolio">
+			<div class="portfolio-details">
+				<div class="section-heading text-center">
+					<h2>certifications</h2>
+				</div>
+				<div class="container">
+					<div class="portfolio-content">
+						<div class="isotope">
+							<div class="row">
+
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="assets/images/portfolio/p1.jpg" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												Kotlin
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+									<div class="item">
+										<img src="assets/images/portfolio/p2.jpg" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												Java
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
+
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="assets/images/portfolio/p3.jpg" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												C#
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
+
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="assets/images/portfolio/p4.jpg" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												Webdev
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+									<div class="item">
+										<img src="assets/images/portfolio/p5.jpg" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												Unity
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
+							</div><!-- /.row -->
+						</div><!--/.isotope-->
+					</div><!--/.gallery-content-->
+				</div><!--/.container-->
+			</div><!--/.portfolio-details-->
+
+		</section><!--/.portfolio-->
+		<section id="projects" class="portfolio">
+			<div class="portfolio-details">
+				<div class="section-heading text-center">
+					<h2>current projects</h2>
+				</div>
+				<div class="container">
+					<div class="portfolio-content">
+						<div class="isotope">
+							<div class="row">
+
+								<div class="col-sm-4">
+										<div class="proj-bar text-center pf">
+											<div class="item">
+												<img src="assets/images/git/gitLogo.jpg" alt="projects image"/>
+												<div class="isotope-overlay">
+												
+														Persistance Framework
+											
+												</div><!-- /.isotope-overlay -->
+											</div><!-- /.item -->
+											<h1>Persistance Framework</h1>
+											<div id="pf-desc" class="project-description">
+												sdsdsd
+											</div>
+										</div>
+								</div><!-- /.col -->
+
+								<div class="col-sm-4">
+										<div class="proj-bar text-center djinn">
+											<div class="item">
+												<img src="assets/images/git/gitLogo.jpg" alt="projects image"/>
+												<div class="isotope-overlay">
+													
+														Djinn Lang
+						
+												</div><!-- /.isotope-overlay -->
+											</div><!-- /.item -->
+											<h1>Djinn Lang</h1>
+											<div id="djinn-desc" class="project-description">
+												sdsdsd
+											</div>
+										</div>
+								</div><!-- /.col -->
+
+								<div class="col-sm-4">
+
+										<div class="proj-bar text-center wd">
+											<div class="item">
+												<img src="assets/images/git/gitLogo.jpg" alt="projects image"/>
+												<div class="isotope-overlay">
+												
+														Web Designs
+												
+												</div><!-- /.isotope-overlay -->
+											</div><!-- /.item -->
+											<h1>Web designs</h1>
+											<div id="wd-desc" class="project-description">
+												sdsdsdsd
+											</div>
+										</div>
+
+								</div><!-- /.col -->
+							</div><!-- /.row -->
+						</div><!--/.isotope-->
+					</div><!--/.gallery-content-->
+				</div><!--/.container-->
+			</div><!--/.portfolio-details-->
+
+		</section><!--/.portfolio-->
+		<!--portfolio end -->
+
+		<!--contact start -->
+		<section id="contact" class="contact">
+			<div class="section-heading text-center">
+				<h2>contact me</h2>
+			</div>
+			<div class="container">
+				<div class="contact-content">
+					<div class="row">
+						<div class="col-md-offset-1 col-md-5 col-sm-6">
+							<div class="single-contact-box">
+								<div class="contact-form">
+									<form>
+										<div class="row">
+											<div class="col-sm-6 col-xs-12">
+												<div class="form-group">
+												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+											<div class="col-sm-6 col-xs-12">
+												<div class="form-group">
+													<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="form-group">
+													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="form-group">
+													<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="single-contact-btn">
+													<a class="contact-btn" href="#" role="button">submit</a>
+												</div><!--/.single-single-contact-btn-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+									</form><!--/form-->
+								</div><!--/.contact-form-->
+							</div><!--/.single-contact-box-->
+						</div><!--/.col-->
+						<div class="col-md-offset-1 col-md-5 col-sm-6">
+							<div class="single-contact-box">
+								<div class="contact-adress">
+									<div class="contact-add-head">
+										<h3>VSHNV</h3>
+										<p>Java/Kotlin Developer</p>
+									</div>
+									<div class="contact-add-info">
+										<div class="single-contact-add-info">
+											<h3>phone</h3>
+											<p>+91-9605-182938</p>
+										</div>
+										<div class="single-contact-add-info">
+											<h3>email</h3>
+											<p>vaishnavanil7th@gmail.com</p>
+										</div>
+										<div class="single-contact-add-info">
+											<h3>website</h3>
+											<p>www.vshnv.github.io</p>
+										</div>
+									</div>
+								</div><!--/.contact-adress-->
+								<div class="hm-foot-icon">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li><!--/li-->
+										<li><a href="#"><i class="fa fa-dribbble"></i></a></li><!--/li-->
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li><!--/li-->
+										<li><a href="#"><i class="fa fa-linkedin"></i></a></li><!--/li-->
+										<li><a href="#"><i class="fa fa-instagram"></i></a></li><!--/li-->
+									</ul><!--/ul-->
+								</div><!--/.hm-foot-icon-->
+							</div><!--/.single-contact-box-->
+						</div><!--/.col-->
+					</div><!--/.row-->
+				</div><!--/.contact-content-->
+			</div><!--/.container-->
+
+		</section><!--/.contact-->
+		<!--contact end -->
+
+		<!--footer-copyright start-->
+		<footer id="footer-copyright" class="footer-copyright">
+			<div class="container">
+				<div class="hm-footer-copyright text-center">
+					<p>
+						&copy; copyright Vshnv
+					</p><!--/p-->
+				</div><!--/.text-center-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" ></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.footer-copyright-->
+		<!--footer-copyright end-->
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+		
+		<!-- jquery.sticky.js -->
+		<script src="assets/js/jquery.sticky.js"></script>
+		
+		<!-- for progress bar start-->
+
+		<!-- progressbar js -->
+		<script src="assets/js/progressbar.js"></script>
+
+		<!-- appear js -->
+		<script src="assets/js/jquery.appear.js"></script>
+
+		<!-- for progress bar end -->
+
+		<!--owl.carousel.js-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		
+        
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/gitfetch.js"></script>
+        
+    </body>
+	
 </html>
