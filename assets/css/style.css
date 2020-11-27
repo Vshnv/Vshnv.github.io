@@ -666,10 +666,13 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     transform:scale(1);
     top:0;
 }/*.isotope-overlay*/
+.proj-bar .item {
+    height: 350px;
+}
 .proj-bar {
     box-shadow: 0 3px 15px rgba(0,0,0,.2);
     padding: 10px;
-    min-height: 450px;
+    min-height: 500px;
     margin-bottom: 15px;
     cursor: pointer;
 }
