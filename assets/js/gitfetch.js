@@ -13,7 +13,7 @@
 			});
     	}
         
-        var repos = {"Vshnv/PersistanceFramework":"pf", "ElaraLang/Elara":"el", "Vshnv/Cataphract":"ct"}
+        var repos = {"slimjar/slimjar":"sj", "ElaraLang/Elara":"el", "Vshnv/skeson":"sk"}
         for (i in repos) {
         	fetchDescription(i,repos[i]);
         }
